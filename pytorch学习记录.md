@@ -25,18 +25,6 @@ I think it is better not to use `num_workers` but `pin_memory=True` instead.
 
 ## [`Pytorch Module Save`](https://pytorch.org/tutorials/beginner/saving_loading_models.html?highlight=load)
 
-## C++ Combile Pytorch
+## Learning Rate
 
-[Reference Website](https://pytorch.org/tutorials/advanced/cpp_export.html#a-minimal-c-application.I)
-
-1. Using `zhuanhuanmoxing.py` to load *.pth* file and transfer to *.pt* file, remember to `import GeneratorNetModule`
-
-2. Install libtorch, using two things: **example-app.cpp**, and **cmakeList**.
-
-   **cmakeList** need *[Download libtorch]([libtorch](https://zhuanlan.zhihu.com/p/92374964)), [opencv ](https://www.zhihu.com/question/263917089)*and *[ippicv](https://www.cnblogs.com/yongy1030/p/10293178.html), torch path* is `/home/li/anaconda3/envs/py3.6/lib/python3.6/site-packages/torch/share/cmake/Torch`。这里opencv安装了一整天，就是不行。最后anaconda安装的才OK，用的
-
-   **example-app.cpp** 其中module参考新网站，module调用方法用`.`不能用`->`, 这个cpp写的是HM要调用时的C++函数
-
-   然后`mkdir build`， `cd build`, `cmake ..`, `make`.
-
-   生成example-app, 之后HM里`system(PathToExample-app)；`
+Use torch.optim. Something like web

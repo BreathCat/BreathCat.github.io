@@ -22,3 +22,8 @@ sudo service lightdm stop
 sudo service lightdm start
 ```
 
+## gcc和g++版本设置
+
+系统gcc[参考网站](https://blog.csdn.net/gatieme/article/details/52871438)
+
+直接anaconda其实就可以了
